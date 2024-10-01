@@ -4,7 +4,7 @@ a klubbok nevével és tagjainak számával. (pl. {"club1": 4, "club2": 3....}) 
 function f2() {
     const clubs = {};
     students.forEach(student => {
-        let clubName = student.club;
+        let clubName = `${student.club}`;
         if (!clubs[clubName]) clubs[clubName] = 1;
         else clubs[clubName]++;
     });
